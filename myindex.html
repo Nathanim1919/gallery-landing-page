@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        body{
+            padding: 1rem;
+            display: grid;
+            place-items: center;
+        }
+        .header{
+
+            display: grid;
+            place-items: center;
+            gap: 1rem;
+        }
+
+        .profile{
+
+            display: grid;
+            place-items: center;
+        }
+
+        .profile img{
+
+            width: 100px;
+            border-radius: 10px;
+        }
+
+        .profile p{
+            margin-top: 0;
+            font-size: .8rem;
+            color: rgba(0, 0, 0, 0.5);
+        }
+        .profile h1{
+            margin-bottom: 0;
+            font-size: 1.1rem;
+            color: rgba(0, 0, 0, 0.8);
+        }
+
+        .about{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+           
+        }
+        
+        .about > *{
+            background-color: #eee;
+            width: 130px;
+            display: grid;
+            place-items: center;
+            border-radius: 10px;
+            padding:auto 1rem;
+            box-shadow: 0 5px 5px rgba(0, 0, 0, 0.051);
+        }
+        .about p{
+            margin-top: 0;
+            font-size: .8rem;
+           color: rgb(163, 151, 151);
+        }
+        .about h1{
+            margin-bottom: 0;
+            font-size: 1.1rem;
+            color: rgb(94, 91, 91);
+        }
+
+        .gallary{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 2rem;
+            transition: all 1s ease-in-out;
+            width: 90vw;
+        }
+
+      
+
+        .gallary > * img{
+            border-radius: 10px;
+            width: 100%;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.0516);
+        }
+        .one{
+            grid-column: 1/2;
+            grid-row: 1/2;
+        }
+
+        .two{
+            grid-column: 2/4;
+        }
+
+        .three{
+            grid-column: 1/3;
+        }
+
+        .four{
+            grid-row: 2/4;
+            grid-column: 3/4;
+        }
+
+        .four img{
+            width: 100%;
+        }
+
+
+        @media (max-width:700px){
+            .gallary{
+                gap: .6rem;
+            }
+
+        .about{
+            width: 80vw;
+        }
+        }
+        
+
+        @media (max-width:1000px){
+            .gallary{
+                gap: 1rem;
+            }
+
+        .about{
+            width: 40vw;
+        }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <div class="profile">
+            <img src="files/profilePhoto.png" alt="">
+            <h1>Rodnet Cotton</h1>
+            <p>Helsinki Finland</p>
+        </div>
+
+        <div class="about">
+            <div class="post">
+                <h1>100</h1>
+                <p>posts</p>
+            </div>
+            <div class="Follower">
+                <h1>2,242</h1>
+                <p>Follower</p>
+            </div>
+            <div class="Following">
+                <h1>1,432</h1>
+                <p>Following</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="gallary">
+        <div class="one">
+            <img src="files/photo1.png" alt="">
+        </div>
+        <div class="two">
+            <img src="files/photo2.png" alt="">
+        </div>
+        <div class="three">
+            <img src="files/photo3.png" alt="">
+        </div>
+        <div class="four">
+            <img src="files/photo_4.png" alt="">
+        </div>
+        <div class="five">
+            <img src="files/photo5.png" alt="">
+        </div>
+        <div class="six">
+            <img src="files/photo6.png" alt="">
+        </div>
+    </div>
+
+
+    <p>Created by nathanim1919-devchallenges.io</p>
+    
+</body>
+</html>
